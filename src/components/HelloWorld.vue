@@ -29,7 +29,7 @@
     </van-radio-group>
 
     <van-cell>
-     解析{{items[currentIndex].analysis || items[currentIndex].questions[0].analysis}}
+     解析:{{items[currentIndex].analysis || items[currentIndex].questions[0].analysis}}
     </van-cell>
 
     <van-submit-bar button-text="下一题" @submit="onSubmit" />
@@ -48,7 +48,7 @@ import {
   Radio,
   Divider
 } from "vant";
-import QUESTION from "./../constants/midwayTest";
+import QUESTION from "./../constants/question4";
 // const { QUESTION_EIGHT } = CONSTANTS;
 export default {
   name: "HelloWorld",
