@@ -21,6 +21,22 @@
         <van-cell title="活动创建日志" icon="play" />
         <van-steps direction="vertical" :active="0">
             <van-step>
+                <h3>还需要一些积极的小伙伴哟，真爱粉们快入群～</h3>
+                <p>2021-07-26</p>
+            </van-step>
+            <van-step>
+                <h3>新增小伙伴10+名</h3>
+                <p>2021-07-25</p>
+            </van-step>
+            <van-step>
+                <h3>新增小伙伴10+名</h3>
+                <p>2021-07-24</p>
+            </van-step>
+            <van-step>
+                <h3>新增小伙伴3名,梦回那个电话亭</h3>
+                <p>2021-07-23</p>
+            </van-step>
+            <van-step>
                 <h3>新增小伙伴8名，希望我们拥有不一样的夏天</h3>
                 <p>"想要被理解，被认同，想要心与心之间开心的交流"</p>
                 <p>2021-07-22</p>
