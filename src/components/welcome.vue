@@ -21,6 +21,15 @@
         <van-cell title="活动创建日志" icon="play" />
         <van-steps direction="vertical" :active="0">
             <van-step>
+                <p>和热心群友一起去影院观看试映,非常感谢音符君的参与～</p>
+                <p>民那桑，下周日下午三点，凯德1818不见不散哟</p>
+                <p>2021-08-29</p>
+            </van-step>
+            <van-step>
+                <p>群内组织线上观影《EVA 破 2.22》</p>
+                <p>2021-08-22</p>
+            </van-step>
+            <van-step>
                 <p>和影院方沟通，确认最终活动时间</p>
                 <p>活动时间:<b>2021/9/5（周日）15:00 PM</b></p>
                 <p>缴费报名截止时间：<b>2021/9/1 12:00 AM</b></p>
