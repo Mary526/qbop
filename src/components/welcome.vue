@@ -21,6 +21,12 @@
         <van-cell title="活动创建日志" icon="play" />
         <van-steps direction="vertical" :active="0">
             <van-step>
+                <p>正式观影～撒花～完结</p>
+                <p>再见啦，所有的EVA</p>
+                <p><a href="https://www.bilibili.com/video/BV1zy4y1G7vf?share_source=copy_web">【EVA终】新剧场版终的三种结局·完全解析</a></p>
+                <p>2021-09-05</p>
+            </van-step>
+            <van-step>
                 <p>和热心群友一起去影院观看试映,非常感谢音符君的参与～</p>
                 <p>民那桑，下周日下午三点，凯德1818不见不散哟</p>
                 <p>2021-08-29</p>
