@@ -20,6 +20,34 @@
 
         <van-cell title="活动创建日志" icon="play" />
         <van-steps direction="vertical" :active="0">
+          <van-step>
+            <p>一周年纪念~</p>
+            <p>2022-09-08</p>
+          </van-step>
+          <van-step>
+            <p>感谢感谢这位网友花时间来回复问卷，今天才看到。也是挺感慨的吧，去年组织EVA武汉线下观影活动（自己傻透了门票定60哈哈，整个活动结束自己感受到了非常多的快乐，纯粹的快乐，也感谢大家包容了我的不成熟、敏感和“冷漠”[666]，其实到最后一起来看的伙伴不太多，大家后面联系也不太多，大概是自己后来疏于去聊天吧，就是一时之勇哈哈，但能遇见三观相似、成熟、能沟通的伙伴、自己真的很开心。能体会到一点点伊森的快乐，帮助他人快乐自己[嘿哈]
+            也许以后会继续组织线下活动吧，谁知道呢[让我看看]（补上去年的活动图</p>
+
+            <van-grid>
+              <van-grid-item                      
+                v-for="(item,index) in images1"
+                :key="index"
+              >
+                <van-image
+                    width="80"
+                    height="80"
+                    fit="fill"
+                    :src="item"
+                    @click="sceneImg(images1,index)"
+                />
+              </van-grid-item>
+            </van-grid>
+
+
+            <p>PS. 感谢感谢Eclair同学 一起测评并敲定最终观影的地点</p>
+            <p>PPS. 感谢感谢袁胖提供的等等后期技术支持（迟来一年多哈哈哈</p>
+            <p>2022-09-08</p>
+          </van-step>
             <van-step>
                 <p>正式观影～撒花～完结</p>
                 <p>再见啦，所有的EVA</p>
@@ -153,7 +181,7 @@
 </template>
 
 <script>
-    import {Step, Steps,NoticeBar,NavBar,Cell} from 'vant'
+    import {Step, Steps,NoticeBar,NavBar,Cell,Grid, GridItem , Image as VanImage , ImagePreview} from 'vant'
     export default {
         name: "welcome",
         components: {
@@ -162,8 +190,33 @@
             [NoticeBar.name]: NoticeBar,
             [NavBar.name]: NavBar,
             [Cell.name]: Cell,
-
-        }
+            [Grid.name]: Grid,
+            [GridItem.name]: GridItem,
+            [VanImage.name]: VanImage,
+            [ImagePreview.name]: ImagePreview,
+        },
+      data() {
+          return {
+            images1: [
+              'http://amier.asuscomm.com:6391/images/2022/09/16/iShot_2022-09-08_11.49.51-2.png',
+                'http://amier.asuscomm.com:6391/images/2022/09/16/iShot_2022-09-08_11.51.07.png',
+                'http://amier.asuscomm.com:6391/images/2022/09/16/IMG_8017.jpg',
+                'http://amier.asuscomm.com:6391/images/2022/09/16/IMG_8016.jpg',
+                'http://amier.asuscomm.com:6391/images/2022/09/16/IMG_8014.jpg'
+            ]
+          }
+      },
+      methods:{
+        // 图片预览
+        sceneImg(images,index) {
+          ImagePreview({
+            images:images, //需要预览的图片 URL 数组
+            showIndex:true, //是否显示页码
+            loop:false, //是否开启循环播放
+            startPosition:index //图片预览起始位置索引
+          })
+        },
+      }
 
     }
 </script>
